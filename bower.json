@@ -1,0 +1,21 @@
+{
+  "name": "mobffshuffle",
+  "homepage": "https://github.com/mck86/mobffshuffle",
+  "authors": [
+    "KORNMI <mike.korn@mpac.ca>"
+  ],
+  "description": "Mobius Final Fantasy Shuffle",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1"
+  }
+}
