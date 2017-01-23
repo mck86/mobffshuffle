@@ -18,5 +18,9 @@
   "homepage": "https://github.com/mck86/mobffshuffle#readme",
   "dependencies": {
     "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
   }
 }
