@@ -12,6 +12,9 @@ module.exports = function(grunt) {
             },
         },
         watch: {
+            options: {
+                livereload: true,
+            },
             scripts: {
                 files: ['src/scripts/*.js'],
                 tasks: ['concat:scripts'],
@@ -21,9 +24,18 @@ module.exports = function(grunt) {
                 tasks: ['concat:styles'],
             },
         },
+        connect: {
+            server: {
+                options: {
+                    port: 9001,
+                    livereload: true
+                },
+            },
+        },
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['concat','watch']);
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.registerTask('default', ['concat','watch','connect']);
 };
