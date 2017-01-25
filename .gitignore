@@ -1,7 +1,4 @@
-dist
-node_modules
 npm-debug.log
 debug.log
-bower_components
 envconfig.js
 .vscode
